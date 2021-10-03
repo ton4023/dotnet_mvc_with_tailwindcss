@@ -1,8 +1,8 @@
-npm init -y
+1. npm init -y
 
-npm install tailwindcss postcss autoprefixer postcss-cli
+2. npm install tailwindcss postcss autoprefixer postcss-cli
 
-Add a postcss.config.js
+3. Add a postcss.config.js
 // postcss.config.js
 module.exports = {
   plugins: {
@@ -11,18 +11,17 @@ module.exports = {
   }
 }
 
-npx tailwindcss init
+4. npx tailwindcss init
 
-Add a style.css under wwwroot/css
+5. Add a style.css under wwwroot/css
 //style.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-in package.json add
+6. in package.json add
 "scripts": {
   "buildcss": "postcss wwwroot/css/style.css -o wwwroot/css/site.css"
 },
 
-
-npm run buildcss
+7. npm run buildcss
